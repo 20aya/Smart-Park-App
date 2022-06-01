@@ -3,9 +3,12 @@ it's an application that combines the park owners &amp; drivers in a single plat
 
 
 
-/n Technologies Used:
+ Technologies Used:
+
 •	Text Recognition from (firebase vision text recognizer) to scan the plate number of cars.
+
 •	Google map service to view the parks near the user's location.
+
 •	Barcode scanning for authenticate leaving the spot.
 
  Language Used: Java.
