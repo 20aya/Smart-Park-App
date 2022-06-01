@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="16dp"
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/Constrain1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="20dp"
+                android:shadowColor="#9721CD"
+                android:text="price"
+                android:textColor="#8D2AB8"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal2"
+                android:layout_width="101dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:paddingLeft="20dp"
+                android:text="0.00"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="18dp"
+                android:text="Please Enter The Information of Your Spot:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="20dp"
+                android:text="Type "
+                android:textColor="#7B1FA2"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchCompat"
+                android:layout_width="108dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:textOff="Outdoor"
+                android:textOn="Indoor"
+                android:thumb="@drawable/sw_thumb"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2"
+                app:showText="true"
+                app:track="@drawable/track" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="33dp"
+                android:paddingLeft="20dp"
+                android:text="Location "
+                android:textColor="#7B1FA2"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="130dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="168dp"
+                android:layout_marginEnd="168dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/holo_red_light"
+                android:backgroundTint="#FF4C4C"
+                android:paddingBottom="10dp"
+                android:shadowColor="#E12B73"
+                android:text="Add Spot"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:rippleColor="@color/design_default_color_error"
+                app:strokeColor="#EC357D" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="282dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName"
+                android:shadowColor="#CCC6C6"
+                android:text="Search...."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#8FD354"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="#8FD354"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:background="#8FD354"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="16dp"
+                android:text="per Hour/ SAR $"
+                app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal2"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="104dp"
+                android:layout_height="74dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:srcCompat="@drawable/plateimage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="16dp"
+            android:background="#8FD354"
+            app:layout_constraintBottom_toTopOf="@+id/map_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/map_container"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:background="#7B1FA2"
+            android:padding="15dp">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/owner_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingBottom="30dp" />
+
+            <ImageView
+                android:id="@+id/map_pin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pin2" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

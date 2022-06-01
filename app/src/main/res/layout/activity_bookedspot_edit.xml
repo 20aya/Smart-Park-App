@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".BookedSpotEdit">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="407dp"
+        android:layout_height="552dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#F6F2E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView22ovv"
+            android:layout_width="220dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="121dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ees22" />
+
+        <TextView
+            android:id="@+id/textView10rrrr3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="58dp"
+            android:text="You can pick a new day And a new Time period"
+            android:textColor="#CD1000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22ovv" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="322dp"
+            android:layout_height="198dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:background="#DCF4E3"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10rrrr3">
+
+
+            <TextView
+                android:id="@+id/textView22o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Pick a new day"
+                android:textColor="#512DA8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/button18"
+                app:layout_constraintEnd_toStartOf="@+id/view88ttiu"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView564r"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:layout_marginTop="15dp"
+                android:text="Pick a new Time"
+                android:textColor="#512DA8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/view88ttiu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view88ttiiiii" />
+
+            <View
+                android:id="@+id/view88tt"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E63D2E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/view88ttiiiii"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E63D2E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view88ttoi"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#E63D2E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view88ttiu"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#E63D2E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="DAY"
+                app:layout_constraintBottom_toTopOf="@+id/view88tt"
+                app:layout_constraintEnd_toStartOf="@+id/view88ttiu"
+                app:layout_constraintStart_toEndOf="@+id/view88ttoi" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="5dp"
+                android:text="START"
+                app:layout_constraintStart_toEndOf="@+id/view88ttoi"
+                app:layout_constraintTop_toBottomOf="@+id/textView564r" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="5dp"
+                android:text="END"
+                app:layout_constraintStart_toEndOf="@+id/button19"
+                app:layout_constraintTop_toBottomOf="@+id/textView564r" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="65dp"
+                android:text="FROM :"
+                app:layout_constraintStart_toEndOf="@+id/view88ttoi"
+                app:layout_constraintTop_toBottomOf="@+id/view88ttiiiii" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+                android:text="TO :"
+                app:layout_constraintStart_toEndOf="@+id/button19"
+                app:layout_constraintTop_toBottomOf="@+id/textView564r" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/button32"
+            android:layout_width="150dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/editprof"
+            android:backgroundTint="#91EAAA"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="  UPDATE  "
+
+            android:textColor="#0E0E0E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView77u" />
+
+        <TextView
+            android:id="@+id/textView77u"
+            android:layout_width="150dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/editprof"
+            android:backgroundTint="#91EAAA"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="CANCEL"
+            android:textColor="#0B0A0B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView104"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="For your booked spot."
+            android:textColor="#CD1000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="369dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:text="Important: prices would change depending on your new picked Time."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

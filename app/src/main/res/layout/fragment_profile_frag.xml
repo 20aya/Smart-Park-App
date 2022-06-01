@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageViewhar"
+        android:layout_width="202dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="110dp"
+        android:src="@drawable/imagecar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar14" />
+
+    <View
+        android:id="@+id/viewhar2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar14" />
+
+    <TextView
+        android:id="@+id/textViewhar17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="user name"
+        android:textColor="@color/purple_200"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewhar" />
+
+    <View
+        android:id="@+id/viewhar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar17" />
+
+    <ImageView
+        android:id="@+id/imageViewhar6"
+        android:layout_width="51dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewhar" />
+
+    <TextView
+        android:id="@+id/textViewhar12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toEndOf="@+id/imageViewhar6"
+        app:layout_constraintTop_toBottomOf="@+id/viewhar" />
+
+    <TextView
+        android:id="@+id/textViewhar19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="228dp"
+        android:text="User Name"
+        android:textColor="#A662C3"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewhar12"
+        app:layout_constraintTop_toBottomOf="@+id/viewhar" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewhar6" />
+
+
+    <ImageView
+        android:id="@+id/imageViewhar7"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewhar6" />
+
+    <TextView
+        android:id="@+id/textViewhar13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="user@email.com"
+        android:textColor="#A662C3"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewhar18"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar19" />
+
+    <TextView
+        android:id="@+id/textViewhar18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/imageViewhar7"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar18" />
+
+    <TextView
+        android:id="@+id/textViewhar14"
+        android:layout_width="192dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Account Settings "
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewhar8"
+        android:layout_width="86dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewhar7" />
+
+    <TextView
+        android:id="@+id/textViewhar20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:text="phone"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewhar8"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar18" />
+
+    <TextView
+        android:id="@+id/textViewhar21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:text="User No"
+        android:textColor="#A662C3"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toEndOf="@+id/textViewhar20"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar13" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewhar8" />
+
+    <TextView
+        android:id="@+id/textViewhar23"
+        android:layout_width="153dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/editprof"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Edit Profile"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewhar" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="151dp"
+        android:text="LOGOUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhar23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

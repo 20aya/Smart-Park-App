@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:backgroundTint="#FBFBFB"
+    tools:context=".vehicle_frag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#F2F0F6"
+        android:backgroundTint="#FBFBFB"
+        app:layout_constraintBottom_toTopOf="@+id/vehc_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="315dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:text="To Enter Your Vehical Informtion Click Add!"
+            android:textColor="#512DA8"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="145dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="10dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:backgroundTint="#C8F692"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:shadowColor="#FBFBFB"
+            android:text="Add"
+            android:textColor="#171616"
+            android:textColorHint="#D32F2F"
+            android:textColorLink="#D32F2F"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vehc_rec"
+        android:layout_width="347dp"
+        android:layout_height="384dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/items_of_vehicles" />
+</androidx.constraintlayout.widget.ConstraintLayout>

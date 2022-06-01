@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/powner_nav"
+    app:startDestination="@id/owner_main">
+    <fragment
+        android:id="@+id/owner_prof"
+        android:name="com.andriod.smartparking1.owner_prof"
+        android:label="fragment_owner_prof"
+        tools:layout="@layout/fragment_owner_prof" />
+    <fragment
+        android:id="@+id/owner_main"
+        android:name="com.andriod.smartparking1.owner_main"
+        android:label="fragment_owner_main"
+        tools:layout="@layout/fragment_owner_main" />
+    <fragment
+        android:id="@+id/owner_add"
+        android:name="com.andriod.smartparking1.owner_add"
+        android:label="fragment_owner_add"
+        tools:layout="@layout/fragment_owner_add" />
+</navigation>
